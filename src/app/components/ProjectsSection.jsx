@@ -7,20 +7,21 @@ import { motion, useInView } from "framer-motion";
 const projectsData = [
   {
     id: 1,
-    title: "E-commerce Application",
-    description: "Project 1 description",
-    image: "images/net.jpg",
+    title: "Enterprise Single-page Website",
+    description: "An example of a Enterprise Website made with NextJS",
+    image: "images/web/w1.png",
     tag: ["All", "Web"],
-    gitUrl: "/",
-    previewUrl: "/",
+    gitUrl: "https://github.com/ByteLintZ/utswebz?tab=readme-ov-file",
+    previewUrl: "https://utswebz.vercel.app/",
   },
   {
     id: 2,
-    title: "Social Media Platform",
-    description: "Project 2 description",
-    image: "images/net.jpg",
-    tag: ["All", "Mobile"],
-    gitUrl: "/",
+    title: "Portofolio Website",
+    description:
+      "This website is actually one of the projects! Made with NextJS",
+    image: "images/web/w2.png",
+    tag: ["All", "Web"],
+    gitUrl: "https://github.com/ByteLintZ/portof_web",
     previewUrl: "/",
   },
   {
@@ -98,11 +99,14 @@ const ProjectsSection = () => {
   };
 
   return (
-    <section id="projects">
-      <h2 className="text-center text-4xl font-bold text-white mt-4 mb-8 md:mb-12">
+    <section
+      id="projects"
+      className="bg-gradient-to-b from-gray-900 via-black to-[#1F2937] pb-16"
+    >
+      <h2 className="text-center text-4xl font-bold text-white pt-16 md:mb-12">
         My Projects
       </h2>
-      <div className="text-white flex flex-row justify-center items-center gap-2 py-6">
+      <div className="text-white flex flex-row justify-center items-center gap-2 py-10">
         <ProjectTag
           onClick={handleTagChange}
           name="All"

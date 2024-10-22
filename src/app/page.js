@@ -13,7 +13,6 @@ export default function Home() {
       <NavBar />
       <div class="container mt-24 mx-auto px-6 py-4">
         <HeroSection />
-        <AchievementsSection />
         <AboutSection />
         <ProjectsSection />
         <EmailSection />
