@@ -29,7 +29,7 @@ const Footer = () => {
         {/* Right Section - Social Icons */}
         <div className="flex justify-center md:justify-end space-x-4">
           <Link
-            href="https://github.com/Anthemnize/Anthemnize"
+            href="https://github.com/ByteLintZ/ByteLintZ"
             className="hover:scale-110 transition-transform duration-200"
             target="_blank"
             rel="noopener noreferrer"
@@ -37,7 +37,7 @@ const Footer = () => {
             <FaGithub size={30} />
           </Link>
           <Link
-            href="https://www.instagram.com/yourusername"
+            href="https://www.instagram.com/biann25z"
             className="hover:scale-110 transition-transform duration-200"
             target="_blank"
             rel="noopener noreferrer"

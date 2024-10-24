@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 
 const HeroSection = () => {
   return (
-    <section className="lg:py-24 bg-gradient-to-b from-gray-900 to-black">
+    <section className="lg:py-36 bg-gradient-to-b from-gray-900 to-black ">
       <div className="grid grid-cols-1 sm:grid-cols-12 pl-16 items-center">
         {/* About Me Section */}
         <div className="col-span-5 place-self-center text-center sm:text-left mb-8 sm:mb-0">
@@ -20,7 +20,7 @@ const HeroSection = () => {
                 Hello, I'm{" "}
               </span>
               <br />
-              <div className="inline-block align-middle">
+              <div className="inline-block align-middle mr-11 text-5xl">
                 <TypeAnimation
                   sequence={[
                     "Fabian",
@@ -93,81 +93,24 @@ const HeroSection = () => {
           left: 0;
           right: 0;
           bottom: 0;
-          clip-path: polygon(
-            50% 0%,
-            100% 50%,
-            50% 100%,
-            0% 50%
-          ); /* Match the diamond shape */
-          border: 4px solid transparent;
-          animation: pulse 1.5s infinite;
-          transform: scale(
-            1.25
-          ); /* This scales the pulse-effect larger than the avatar */
-          z-index: -1; /* Ensure the pulse is behind the avatar */
-        }
-
-        .pulse-effect:before,
-        .pulse-effect:after {
-          content: "";
-          position: absolute;
-          top: 50%;
-          left: 50%;
-          width: 120%; /* Make the pulse larger than the avatar */
-          height: 120%; /* Make the pulse larger than the avatar */
-          clip-path: polygon(
-            50% 0%,
-            100% 50%,
-            50% 100%,
-            0% 50%
-          ); /* Match the diamond shape */
-          border: 4px solid transparent;
-          transform: translate(-50%, -50%);
-        }
-
-        .pulse-effect:before {
-          border-color: rgba(0, 255, 255, 0.5);
-          animation: pulse-inner 1.5s infinite;
-        }
-
-        .pulse-effect:after {
-          border-color: rgba(0, 255, 255, 0.2);
-          animation: pulse-outer 1.5s infinite;
+          border: 2px solid cyan;
+          border-radius: 50%;
+          opacity: 0.5;
+          animation: pulse 1.8s infinite;
         }
 
         @keyframes pulse {
           0% {
-            transform: scale(1.25); /* Start larger */
+            transform: scale(1);
+            opacity: 0.5;
           }
           50% {
-            transform: scale(1.35); /* Grow the pulse outward */
+            transform: scale(1.5);
+            opacity: 0;
           }
           100% {
-            transform: scale(1.25); /* Return to original size */
-          }
-        }
-
-        @keyframes pulse-inner {
-          0% {
-            transform: translate(-50%, -50%) scale(1.1); /* Start slightly larger */
-          }
-          50% {
-            transform: translate(-50%, -50%) scale(1.15); /* Grow slightly outward */
-          }
-          100% {
-            transform: translate(-50%, -50%) scale(1.1); /* Return to original size */
-          }
-        }
-
-        @keyframes pulse-outer {
-          0% {
-            transform: translate(-50%, -50%) scale(1.2); /* Start larger */
-          }
-          50% {
-            transform: translate(-50%, -50%) scale(1.25); /* Grow larger */
-          }
-          100% {
-            transform: translate(-50%, -50%) scale(1.2); /* Return to original size */
+            transform: scale(1);
+            opacity: 0.5;
           }
         }
       `}</style>

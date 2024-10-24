@@ -4,6 +4,7 @@ import Image from "next/image";
 import { FaLaptopCode, FaGraduationCap, FaCertificate } from "react-icons/fa";
 import Modal from "react-modal";
 import { motion, AnimatePresence } from "framer-motion";
+import Link from "next/link";
 
 const AboutSection = () => {
   const [tab, setTab] = useState("skills");
@@ -81,13 +82,13 @@ const AboutSection = () => {
         <ul className="list-none space-y-2">
           <li>
             <FaGraduationCap className="inline-block mr-2" />
-            <a
+            <Link
               target="_blank"
               href="https://www.smkn21jakarta.sch.id/"
               className="text-white hover:underline"
             >
               Vocational School of 21 Jakarta
-            </a>
+            </Link>
           </li>
         </ul>
       ),

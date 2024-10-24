@@ -26,12 +26,12 @@ const projectsData = [
   },
   {
     id: 3,
-    title: "Banking System",
-    description: "Project 3 description",
-    image: "images/net.jpg",
+    title: "Inclusive Goverment Website",
+    description: "The project i made along with other peers for a government",
+    image: "images/web/w3.png",
     tag: ["All", "Desktop"],
     gitUrl: "/",
-    previewUrl: "/",
+    previewUrl: "https://sipendi.multitalenta.id/",
   },
   {
     id: 4,
@@ -101,7 +101,7 @@ const ProjectsSection = () => {
   return (
     <section
       id="projects"
-      className="bg-gradient-to-b from-gray-900 via-black to-[#1F2937] pb-16"
+      className="bg-gradient-to-b from-gray-900 via-black to-blue-950 py-16"
     >
       <h2 className="text-center text-4xl font-bold text-white pt-16 md:mb-12">
         My Projects
