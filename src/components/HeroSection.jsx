@@ -55,10 +55,10 @@ const HeroSection = () => {
           <div className="relative w-[200px] h-[200px] lg:w-[300px] lg:h-[300px] shadow-lg overflow-hidden">
             <div className="clip-diamond absolute inset-0">
               <Image
-                src="/images/me.png"
+                src="/images/me.jpg"
                 alt="Hero Image"
                 layout="fill"
-                className="object-cover"
+                className="object-contain"
               />
             </div>
             <div className="pulse-effect"></div>
